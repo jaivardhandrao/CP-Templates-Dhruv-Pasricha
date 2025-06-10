@@ -1,4 +1,3 @@
-#include <bits/stdc++.h>
 #include <ext/pb_ds/assoc_container.hpp> 
 #include <ext/pb_ds/tree_policy.hpp> 
 using namespace __gnu_pbds; 
@@ -15,7 +14,7 @@ public:
         return st.size() - countElementsLessThanX(x);
     }
 
-    int getKthElement(int k) {
+    T getKthElement(int k) {
         return *st.find_by_order(k);
     }
     
